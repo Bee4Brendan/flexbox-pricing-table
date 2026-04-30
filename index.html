@@ -8,27 +8,26 @@
             href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet" />
         <style>
-            html {
-                background-image: linear-gradient(160deg, rgb(134, 4, 255), 30%, rgb(10, 251, 255) 90%);
-                height: 100%;
-            }
-
             @font-face {
                 font-family: "Marathon";
                 src: url(./font/KH\ Interference\ Regular.ttf);
             }
+            
+            html {
+                background-image: linear-gradient(160deg, rgb(134, 4, 255), 30%, rgb(10, 251, 255) 90%);
+            }
 
             body {
                 font-family: "Roboto", sans-serif;
+                margin: 0;
             }
 
             .pricing-container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 20px;
-                height: 90vh;
-                margin-top: 5vh;
+                gap: 30px;
+                min-height: 100vh;
             }
 
             .pricing-container > * {
@@ -36,7 +35,6 @@
                 border-radius: 15px;
                 display: flex;
                 flex-direction: column;
-                flex: 1;
                 align-items: center;
                 width: 200px;
                 max-width: 250px;
@@ -66,6 +64,7 @@
                 color: rgb(61, 61, 61);
             }
 
+            /* Specific Plan Styles */
             .basic {
                 background-color: rgb(191, 255, 0);
             }
@@ -82,11 +81,13 @@
                 font-family: "Marathon", sans-serif;
                 font-size: 2rem;
                 font-weight: 600;
-                margin-top: 15px;
+                margin-top: 25px;
+                margin-bottom: 10px;
 
                 span {
+                    font-family: "Roboto", sans-serif;
                     font-size: 0.8rem;
-                    color: rgb(138, 99, 255);
+                    color: rgb(132, 130, 136);
                 }
             }
 
@@ -113,6 +114,7 @@
                 padding: 5px;
                 transition: 0.5s ease;
                 border: 2px solid rgba(0, 0, 0, 0);
+                margin-top: 20px;
                 margin-bottom: 10px;
                 width: 50%;
 
@@ -135,6 +137,19 @@
                 .pricing-container {
                     flex-direction: column;
                     height: 100%;
+                }
+
+                .plan-title {
+                    font-size: 1.2rem;
+                }
+
+                ul {
+                    margin-block: 0;
+                }
+
+                .plan-price {
+                    font-size: 1.5rem;
+                    margin: 15px 0;
                 }
 
                 li {
